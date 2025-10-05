@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1E3C40; /* slate-800 */
+  --color-primary-50: #F8FAFC; /* slate-50 */
+  --color-primary-100: #F1F5F9; /* slate-100 */
+  --color-primary-200: #E2E8F0; /* slate-200 */
+  --color-primary-300: #CBD5E1; /* slate-300 */
+  --color-primary-400: #94A3B8; /* slate-400 */
+  --color-primary-500: #64748B; /* slate-500 */
+  --color-primary-600: #475569; /* slate-600 */
+  --color-primary-700: #334155; /* slate-700 */
+  --color-primary-800: #1E293B; /* slate-800 */
+  --color-primary-900: #0F172A; /* slate-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #2A5259; /* teal-700 */
+  --color-secondary-50: #F0FDFA; /* teal-50 */
+  --color-secondary-100: #CCFBF1; /* teal-100 */
+  --color-secondary-200: #99F6E4; /* teal-200 */
+  --color-secondary-300: #5EEAD4; /* teal-300 */
+  --color-secondary-400: #2DD4BF; /* teal-400 */
+  --color-secondary-500: #14B8A6; /* teal-500 */
+  --color-secondary-600: #0D9488; /* teal-600 */
+  --color-secondary-700: #0F766E; /* teal-700 */
+  --color-secondary-800: #115E59; /* teal-800 */
+  --color-secondary-900: #134E4A; /* teal-900 */
+
+  /* Accent Colors */
+  --color-accent: #A8FF76; /* lime-300 */
+  --color-accent-50: #F7FEE7; /* lime-50 */
+  --color-accent-100: #ECFCCB; /* lime-100 */
+  --color-accent-200: #D9F99D; /* lime-200 */
+  --color-accent-300: #BEF264; /* lime-300 */
+  --color-accent-400: #A3E635; /* lime-400 */
+  --color-accent-500: #84CC16; /* lime-500 */
+  --color-accent-600: #65A30D; /* lime-600 */
+  --color-accent-700: #4D7C0F; /* lime-700 */
+  --color-accent-800: #365314; /* lime-800 */
+  --color-accent-900: #1A2E05; /* lime-900 */
+
+  /* Background Colors */
+  --color-background: #0F1419; /* gray-900 */
+  --color-surface: #E0E5E9; /* gray-200 */
+
+  /* Text Colors */
+  --color-text-primary: #FFFFFF; /* white */
+  --color-text-secondary: #B8C5CC; /* gray-400 */
+
+  /* Status Colors */
+  --color-success: #4ADE80; /* green-400 */
+  --color-warning: #F59E0B; /* amber-500 */
+  --color-error: #EF4444; /* red-500 */
+
+  /* Shadows */
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.15);
+  --shadow-strong: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+  /* Animation Timing */
+  --transition-fast: 300ms ease-out;
+  --transition-medium: 400ms ease-out;
+  --transition-slow: 20s linear;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-primary font-rajdhani font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-accent/90 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white font-rajdhani font-semibold px-6 py-3 rounded-lg border border-secondary transition-all duration-300 hover:bg-secondary/90 hover:shadow-lg;
+  }
+
+  .btn-outline {
+    @apply bg-transparent text-accent border border-accent font-rajdhani font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-accent hover:text-primary;
+  }
+
+  .card {
+    @apply bg-surface/10 backdrop-blur-sm rounded-xl p-6 border border-surface/20 transition-all duration-300 hover:bg-surface/15;
+  }
+
+  .input-field {
+    @apply bg-surface/10 border border-surface/30 rounded-lg px-4 py-3 text-white placeholder-text-secondary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-300;
+  }
+
+  .hero-glass {
+    @apply bg-surface/10 backdrop-blur-md border border-surface/20 rounded-xl shadow-strong;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-success bg-clip-text text-transparent;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-satellite {
+    animation: satellite var(--transition-slow) infinite;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .backdrop-blur-strong {
+    backdrop-filter: blur(20px);
+  }
+
+  .transition-smooth {
+    transition: all var(--transition-fast);
+  }
+
+  .transition-medium {
+    transition: all var(--transition-medium);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes satellite {
+  0% {
+    transform: translateX(-100px) translateY(0px);
+  }
+  25% {
+    transform: translateX(0px) translateY(-50px);
+  }
+  50% {
+    transform: translateX(100px) translateY(0px);
+  }
+  75% {
+    transform: translateX(0px) translateY(50px);
+  }
+  100% {
+    transform: translateX(-100px) translateY(0px);
+  }
+}
+
+/* Scroll-triggered animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-medium), transform var(--transition-medium);
+}
+
+.fade-in-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity var(--transition-medium), transform var(--transition-medium);
+}
+
+.fade-in-left.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity var(--transition-medium), transform var(--transition-medium);
+}
+
+.fade-in-right.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}

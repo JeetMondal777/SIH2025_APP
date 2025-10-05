@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flying Eye - Mission Overview | Disaster Response Technology</title>
+    <meta name="description" content="Flying Eye Mission Overview - Problem-solution narrative showing autonomous drone delivery systems transforming emergency response from problem identification to solution deployment." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fflyingeye8404back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-400">
+        <div class="hero-glass backdrop-blur-strong">
+            <div class="container-max px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                                <path d="M12 16L13.09 22.26L22 23L13.09 23.74L12 30L10.91 23.74L2 23L10.91 22.26L12 16Z" opacity="0.6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="font-rajdhani font-bold text-xl text-white">Flying Eye</h1>
+                            <p class="text-xs text-text-secondary">Mission Overview</p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="index.html" class="text-white hover:text-accent transition-colors duration-300">Command Center</a>
+                        <a href="mission_overview.html" class="text-accent font-medium transition-colors duration-300">Mission Overview</a>
+                        <a href="technology_showcase.html" class="text-white hover:text-accent transition-colors duration-300">Technology</a>
+                        <a href="system_capabilities.html" class="text-white hover:text-accent transition-colors duration-300">Capabilities</a>
+                        <a href="team_command.html" class="text-white hover:text-accent transition-colors duration-300">Team</a>
+                        <a href="contact_mission_control.html" class="text-white hover:text-accent transition-colors duration-300">Contact</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-surface/20">
+                    <div class="flex flex-col space-y-4 pt-4">
+                        <a href="index.html" class="text-white hover:text-accent transition-colors duration-300">Command Center</a>
+                        <a href="mission_overview.html" class="text-accent font-medium">Mission Overview</a>
+                        <a href="technology_showcase.html" class="text-white hover:text-accent transition-colors duration-300">Technology</a>
+                        <a href="system_capabilities.html" class="text-white hover:text-accent transition-colors duration-300">Capabilities</a>
+                        <a href="team_command.html" class="text-white hover:text-accent transition-colors duration-300">Team</a>
+                        <a href="contact_mission_control.html" class="text-white hover:text-accent transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mission Hero Section -->
+    <section id="mission-hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/90 via-secondary/80 to-primary/90"></div>
+            <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Emergency response scenario" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/73833/helicopter-flying-sky-73833.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 container-max px-6 text-center">
+            <div class="max-w-4xl mx-auto fade-in-up">
+                <div class="inline-flex items-center space-x-2 bg-surface/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-surface/20">
+                    <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-text-secondary">Mission Status: ACTIVE</span>
+                </div>
+
+                <h1 class="font-rajdhani font-bold text-4xl md:text-6xl lg:text-7xl mb-6 text-shadow-lg">
+                    <span class="text-white">The</span> <span class="text-gradient">Hero's Journey</span><br />
+                    <span class="text-accent">From Crisis to Hope</span>
+                </h1>
+
+                <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Every disaster tells a story of human resilience. Flying Eye transforms that narrative from desperation to hope, 
+                    bridging the critical gap between emergency and aid through autonomous precision.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#problem-narrative" class="btn-primary text-lg px-8 py-4 shadow-glow hover:shadow-glow-strong transition-all duration-400">
+                        <span class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                            </svg>
+                            <span>Explore the Mission</span>
+                        </span>
+                    </a>
+                    <a href="technology_showcase.html" class="btn-outline text-lg px-8 py-4">
+                        <span class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                            <span>View Technology</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Narrative Section -->
+    <section id="problem-narrative" class="section-padding bg-primary/30">
+        <div class="container-max">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Problem Content -->
+                <div class="fade-in-left">
+                    <div class="inline-flex items-center space-x-2 bg-error/20 rounded-full px-4 py-2 mb-6">
+                        <svg class="w-4 h-4 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                        </svg>
+                        <span class="text-sm font-medium text-error">Critical Challenge</span>
+                    </div>
+
+                    <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-6 text-white">
+                        When Infrastructure <span class="text-error">Fails</span>
+                    </h2>
+
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        Natural disasters don't just destroy buildings—they shatter the lifelines that connect communities to survival. 
+                        Roads become impassable, bridges collapse, and traditional supply chains crumble when they're needed most.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-error rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-rajdhani font-semibold text-white mb-1">Transportation Networks Collapse</h4>
+                                <p class="text-sm text-text-secondary">Roads, bridges, and airports become unusable, isolating affected areas</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-warning rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-rajdhani font-semibold text-white mb-1">Critical Time Loss</h4>
+                                <p class="text-sm text-text-secondary">Every hour of delay increases casualties and suffering exponentially</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-error rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-rajdhani font-semibold text-white mb-1">Resource Coordination Chaos</h4>
+                                <p class="text-sm text-text-secondary">Multiple agencies struggle to coordinate aid distribution effectively</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-glass p-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-error/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-rajdhani font-bold text-error">72 Hours</div>
+                                <div class="text-sm text-text-secondary">Critical window for disaster response</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problem Visualization -->
+                <div class="fade-in-right">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/1739855/pexels-photo-1739855.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2" alt="Disaster aftermath showing blocked roads" class="w-full h-80 object-cover rounded-xl shadow-strong" onerror="this.src='https://images.unsplash.com/photo-1547036967-23d11aacaee0?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        
+                        <!-- Overlay Statistics -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent rounded-xl"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center">
+                                    <div class="text-2xl font-rajdhani font-bold text-error">85%</div>
+                                    <div class="text-xs text-text-secondary">Infrastructure Damage</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-rajdhani font-bold text-warning">48hrs</div>
+                                    <div class="text-xs text-text-secondary">Average Response Delay</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Narrative Section -->
+    <section id="solution-narrative" class="section-padding bg-secondary/20">
+        <div class="container-max">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Solution Visualization -->
+                <div class="fade-in-left">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Drone delivering supplies" class="w-full h-80 object-cover rounded-xl shadow-strong" onerror="this.src='https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2'; this.onerror=null;" />
+                        
+                        <!-- Animated Drone Path -->
+                        <div class="absolute top-4 left-4">
+                            <div class="w-4 h-4 bg-accent rounded-full shadow-glow animate-satellite"></div>
+                        </div>
+                        
+                        <!-- Success Metrics Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent rounded-xl"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center">
+                                    <div class="text-2xl font-rajdhani font-bold text-accent">< 5min</div>
+                                    <div class="text-xs text-text-secondary">Response Time</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-rajdhani font-bold text-success">50km</div>
+                                    <div class="text-xs text-text-secondary">Coverage Radius</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution Content -->
+                <div class="fade-in-right">
+                    <div class="inline-flex items-center space-x-2 bg-success/20 rounded-full px-4 py-2 mb-6">
+                        <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="text-sm font-medium text-success">Solution Deployed</span>
+                    </div>
+
+                    <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-6 text-white">
+                        Flying Eye <span class="text-accent">Takes Flight</span>
+                    </h2>
+
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        When traditional routes fail, we take to the skies. Flying Eye's autonomous drone network creates 
+                        an aerial lifeline, delivering critical supplies with precision and speed that transforms disaster response.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-rajdhani font-semibold text-white mb-1">Autonomous Navigation</h4>
+                                <p class="text-sm text-text-secondary">AI-powered flight paths adapt to obstacles and weather conditions</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-success rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-rajdhani font-semibold text-white mb-1">Rapid Deployment</h4>
+                                <p class="text-sm text-text-secondary">From emergency call to supply delivery in under 5 minutes</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-rajdhani font-semibold text-white mb-1">Precision Targeting</h4>
+                                <p class="text-sm text-text-secondary">GPS-guided delivery to exact coordinates with 1-meter accuracy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-glass p-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-rajdhani font-bold text-accent">24/7</div>
+                                <div class="text-sm text-text-secondary">Autonomous operations ready</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline Section -->
+    <section id="timeline" class="section-padding bg-primary/40">
+        <div class="container-max">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-6 text-white">
+                    <span class="text-gradient">Transformation Timeline</span>
+                </h2>
+                <p class="text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                    See how Flying Eye revolutionizes disaster response scenarios, transforming critical delays into rapid relief
+                </p>
+            </div>
+
+            <!-- Before/After Comparison -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <!-- Before Flying Eye -->
+                <div class="fade-in-left">
+                    <div class="card border-error/30 hover:border-error/50">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div class="w-8 h-8 bg-error/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-4 h-4 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-rajdhani font-bold text-xl text-white">Before Flying Eye</h3>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="timeline-item">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-3 h-3 bg-error rounded-full"></div>
+                                    <span class="text-sm font-medium text-error">Hour 0: Disaster Strikes</span>
+                                </div>
+                                <p class="text-sm text-text-secondary ml-6">Emergency declared, infrastructure assessment begins</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                    <span class="text-sm font-medium text-warning">Hours 2-6: Route Planning</span>
+                                </div>
+                                <p class="text-sm text-text-secondary ml-6">Teams assess damage, plan alternative routes</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                    <span class="text-sm font-medium text-warning">Hours 12-24: Mobilization</span>
+                                </div>
+                                <p class="text-sm text-text-secondary ml-6">Ground teams mobilize, navigate obstacles</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-3 h-3 bg-error rounded-full"></div>
+                                    <span class="text-sm font-medium text-error">Hours 48-72: First Aid Arrives</span>
+                                </div>
+                                <p class="text-sm text-text-secondary ml-6">Critical window nearly closed, casualties mount</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-error/10 rounded-lg border border-error/20">
+                            <div class="text-center">
+                                <div class="text-2xl font-rajdhani font-bold text-error mb-1">48-72 Hours</div>
+                                <div class="text-sm text-text-secondary">Average response time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- After Flying Eye -->
+                <div class="fade-in-right">
+                    <div class="card border-accent/30 hover:border-accent/50 hover:shadow-glow">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div class="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-rajdhani font-bold text-xl text-white">With Flying Eye</h3>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="timeline-item">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+                                    <span class="text-sm font-medium text-accent">Minute 0: Disaster Strikes</span>
+                                </div>
+                                <p class="text-sm text-text-secondary ml-6">Emergency declared, Flying Eye network activates</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-3 h-3 bg-success rounded-full animate-pulse"></div>
+                                    <span class="text-sm font-medium text-success">Minutes 1-2: Auto-Assessment</span>
+                                </div>
+                                <p class="text-sm text-text-secondary ml-6">AI analyzes damage, calculates optimal flight paths</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+                                    <span class="text-sm font-medium text-accent">Minutes 3-4: Drone Launch</span>
+                                </div>
+                                <p class="text-sm text-text-secondary ml-6">Autonomous drones launch with critical supplies</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-3 h-3 bg-success rounded-full animate-pulse"></div>
+                                    <span class="text-sm font-medium text-success">Minute 5: Aid Delivered</span>
+                                </div>
+                                <p class="text-sm text-text-secondary ml-6">Precision delivery to GPS coordinates, lives saved</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-accent/10 rounded-lg border border-accent/20">
+                            <div class="text-center">
+                                <div class="text-2xl font-rajdhani font-bold text-accent mb-1">< 5 Minutes</div>
+                                <div class="text-sm text-text-secondary">Emergency response time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Metrics -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in-up">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-rajdhani font-bold text-accent mb-2" id="time-counter">0</div>
+                    <div class="text-sm text-text-secondary">Times Faster Response</div>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-rajdhani font-bold text-success mb-2" id="coverage-counter">0</div>
+                    <div class="text-sm text-text-secondary">Km Coverage Radius</div>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-secondary-300/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-rajdhani font-bold text-secondary-300 mb-2" id="lives-counter">0</div>
+                    <div class="text-sm text-text-secondary">Potential Lives Saved</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section-padding bg-gradient-to-r from-primary to-secondary">
+        <div class="container-max text-center">
+            <div class="max-w-4xl mx-auto fade-in-up">
+                <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-6 text-white">
+                    Ready to Transform <span class="text-accent">Emergency Response?</span>
+                </h2>
+                
+                <p class="text-text-secondary mb-8 text-lg leading-relaxed">
+                    Join us in revolutionizing disaster response. Every second counts, and Flying Eye ensures those seconds save lives.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="technology_showcase.html" class="btn-primary text-lg px-8 py-4 shadow-glow hover:shadow-glow-strong transition-all duration-400">
+                        <span class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                            <span>Explore Technology</span>
+                        </span>
+                    </a>
+                    <a href="contact_mission_control.html" class="btn-outline text-lg px-8 py-4">
+                        <span class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                            <span>Contact Mission Control</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar background on scroll
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-primary/90');
+            } else {
+                navbar.classList.remove('bg-primary/90');
+            }
+        });
+
+        // Scroll-triggered animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Counter animations
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start);
+                }
+            }, 16);
+        }
+
+        // Trigger counters when timeline section is visible
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(document.getElementById('time-counter'), 576); // 48hrs to 5min = 576x faster
+                    animateCounter(document.getElementById('coverage-counter'), 50);
+                    animateCounter(document.getElementById('lives-counter'), 1000);
+                    timelineObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const timelineSection = document.getElementById('timeline');
+        if (timelineSection) {
+            timelineObserver.observe(timelineSection);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add CSS classes for animations
+        const style = document.createElement('style');
+        style.textContent = `
+            .fade-in-up, .fade-in-left, .fade-in-right {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+            
+            .fade-in-left {
+                transform: translateX(-30px);
+            }
+            
+            .fade-in-right {
+                transform: translateX(30px);
+            }
+            
+            .fade-in-up.animate, .fade-in-left.animate, .fade-in-right.animate {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+            
+            .timeline-item {
+                position: relative;
+                padding-left: 1rem;
+                border-left: 2px solid rgba(224, 229, 233, 0.1);
+                margin-bottom: 1rem;
+            }
+            
+            .timeline-item:last-child {
+                border-left: none;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

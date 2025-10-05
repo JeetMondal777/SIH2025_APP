@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flying Eye - Technology Showcase | Advanced Drone Systems</title>
+    <meta name="description" content="Explore Flying Eye's cutting-edge autonomous drone technology. Interactive feature showcase with technical specifications and system capabilities." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fflyingeye8404back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-400">
+        <div class="hero-glass backdrop-blur-strong">
+            <div class="container-max px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                                <path d="M12 16L13.09 22.26L22 23L13.09 23.74L12 30L10.91 23.74L2 23L10.91 22.26L12 16Z" opacity="0.6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="font-rajdhani font-bold text-xl text-white">Flying Eye</h1>
+                            <p class="text-xs text-text-secondary">Technology Showcase</p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="index.html" class="text-white hover:text-accent transition-colors duration-300">Command Center</a>
+                        <a href="mission_overview.html" class="text-white hover:text-accent transition-colors duration-300">Mission Overview</a>
+                        <a href="technology_showcase.html" class="text-accent font-medium transition-colors duration-300">Technology</a>
+                        <a href="system_capabilities.html" class="text-white hover:text-accent transition-colors duration-300">Capabilities</a>
+                        <a href="team_command.html" class="text-white hover:text-accent transition-colors duration-300">Team</a>
+                        <a href="contact_mission_control.html" class="text-white hover:text-accent transition-colors duration-300">Contact</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-surface/20">
+                    <div class="flex flex-col space-y-4 pt-4">
+                        <a href="index.html" class="text-white hover:text-accent transition-colors duration-300">Command Center</a>
+                        <a href="mission_overview.html" class="text-white hover:text-accent transition-colors duration-300">Mission Overview</a>
+                        <a href="technology_showcase.html" class="text-accent font-medium">Technology</a>
+                        <a href="system_capabilities.html" class="text-white hover:text-accent transition-colors duration-300">Capabilities</a>
+                        <a href="team_command.html" class="text-white hover:text-accent transition-colors duration-300">Team</a>
+                        <a href="contact_mission_control.html" class="text-white hover:text-accent transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/90 via-secondary/80 to-primary/90"></div>
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Advanced technology circuit board" class="w-full h-full object-cover opacity-30" onerror="this.src='https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 container-max px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <!-- Badge -->
+                <div class="inline-flex items-center space-x-2 bg-surface/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-surface/20">
+                    <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-text-secondary">Smart India Hackathon 2025</span>
+                    <span class="text-xs text-accent">Open Source</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="font-rajdhani font-bold text-4xl md:text-6xl lg:text-7xl mb-6 text-shadow-lg">
+                    <span class="text-white">Advanced</span><br />
+                    <span class="text-gradient">Drone Technology</span><br />
+                    <span class="text-accent">Stack</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-lg md:text-xl text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
+                    Explore the cutting-edge technologies powering Flying Eye's autonomous disaster response system. From AI-driven navigation to real-time emergency coordination.
+                </p>
+
+                <!-- Tech Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+                    <div class="text-center">
+                        <div class="text-2xl font-rajdhani font-bold text-accent mb-1">99.9%</div>
+                        <div class="text-sm text-text-secondary">System Reliability</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-rajdhani font-bold text-success mb-1">< 2s</div>
+                        <div class="text-sm text-text-secondary">Response Time</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-rajdhani font-bold text-accent mb-1">AI</div>
+                        <div class="text-sm text-text-secondary">Powered Navigation</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-rajdhani font-bold text-secondary-300 mb-1">24/7</div>
+                        <div class="text-sm text-text-secondary">Autonomous Operation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Technologies Section -->
+    <section class="section-padding bg-primary/30">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-4 text-white">Core Technologies</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Discover the innovative technologies that make Flying Eye the most advanced disaster response drone system
+                </p>
+            </div>
+
+            <!-- Technology Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Autonomous Navigation -->
+                <div class="tech-card group cursor-pointer" data-tech="navigation">
+                    <div class="card hover:bg-surface/20 transition-all duration-400 group-hover:shadow-glow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center group-hover:bg-accent/30 transition-colors duration-300">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-rajdhani font-semibold text-xl text-white">Autonomous Navigation</h3>
+                                <p class="text-sm text-accent">AI-Powered Pathfinding</p>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            Advanced computer vision and machine learning algorithms enable real-time obstacle avoidance and optimal route planning.
+                        </p>
+                        <div class="tech-details hidden group-hover:block transition-all duration-300">
+                            <div class="border-t border-surface/20 pt-4 mt-4">
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-accent">Algorithm:</span>
+                                        <span class="text-text-secondary block">A* + Neural Networks</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-accent">Accuracy:</span>
+                                        <span class="text-text-secondary block">99.7% Success Rate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-time Communication -->
+                <div class="tech-card group cursor-pointer" data-tech="communication">
+                    <div class="card hover:bg-surface/20 transition-all duration-400 group-hover:shadow-glow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center group-hover:bg-secondary/30 transition-colors duration-300">
+                                <svg class="w-6 h-6 text-secondary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-rajdhani font-semibold text-xl text-white">Real-time Communication</h3>
+                                <p class="text-sm text-secondary-300">5G + Satellite Connectivity</p>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            Hybrid communication system ensures constant connectivity even in disaster-affected areas with damaged infrastructure.
+                        </p>
+                        <div class="tech-details hidden group-hover:block transition-all duration-300">
+                            <div class="border-t border-surface/20 pt-4 mt-4">
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-secondary-300">Latency:</span>
+                                        <span class="text-text-secondary block">< 50ms</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary-300">Range:</span>
+                                        <span class="text-text-secondary block">Global Coverage</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Detection -->
+                <div class="tech-card group cursor-pointer" data-tech="detection">
+                    <div class="card hover:bg-surface/20 transition-all duration-400 group-hover:shadow-glow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-error/20 rounded-lg flex items-center justify-center group-hover:bg-error/30 transition-colors duration-300">
+                                <svg class="w-6 h-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-rajdhani font-semibold text-xl text-white">Emergency Detection</h3>
+                                <p class="text-sm text-error">Computer Vision + IoT</p>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            Multi-sensor fusion technology identifies emergency situations and assesses severity for optimal response prioritization.
+                        </p>
+                        <div class="tech-details hidden group-hover:block transition-all duration-300">
+                            <div class="border-t border-surface/20 pt-4 mt-4">
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-error">Detection Time:</span>
+                                        <span class="text-text-secondary block">< 1 second</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-error">Accuracy:</span>
+                                        <span class="text-text-secondary block">98.5% Precision</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payload Management -->
+                <div class="tech-card group cursor-pointer" data-tech="payload">
+                    <div class="card hover:bg-surface/20 transition-all duration-400 group-hover:shadow-glow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-success/20 rounded-lg flex items-center justify-center group-hover:bg-success/30 transition-colors duration-300">
+                                <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-rajdhani font-semibold text-xl text-white">Smart Payload System</h3>
+                                <p class="text-sm text-success">Adaptive Delivery Mechanism</p>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            Intelligent payload management system adapts delivery method based on emergency type and environmental conditions.
+                        </p>
+                        <div class="tech-details hidden group-hover:block transition-all duration-300">
+                            <div class="border-t border-surface/20 pt-4 mt-4">
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-success">Capacity:</span>
+                                        <span class="text-text-secondary block">Up to 5kg</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-success">Precision:</span>
+                                        <span class="text-text-secondary block">±1m Accuracy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather Adaptation -->
+                <div class="tech-card group cursor-pointer" data-tech="weather">
+                    <div class="card hover:bg-surface/20 transition-all duration-400 group-hover:shadow-glow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-warning/20 rounded-lg flex items-center justify-center group-hover:bg-warning/30 transition-colors duration-300">
+                                <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-rajdhani font-semibold text-xl text-white">Weather Adaptation</h3>
+                                <p class="text-sm text-warning">All-Weather Operations</p>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            Advanced weather monitoring and adaptive flight control systems enable operations in challenging weather conditions.
+                        </p>
+                        <div class="tech-details hidden group-hover:block transition-all duration-300">
+                            <div class="border-t border-surface/20 pt-4 mt-4">
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-warning">Wind Resistance:</span>
+                                        <span class="text-text-secondary block">Up to 45 km/h</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-warning">Rain Operation:</span>
+                                        <span class="text-text-secondary block">IP67 Rated</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Battery Management -->
+                <div class="tech-card group cursor-pointer" data-tech="battery">
+                    <div class="card hover:bg-surface/20 transition-all duration-400 group-hover:shadow-glow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center group-hover:bg-accent/30 transition-colors duration-300">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-rajdhani font-semibold text-xl text-white">Power Management</h3>
+                                <p class="text-sm text-accent">Extended Flight Time</p>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            Intelligent power management system optimizes energy consumption for maximum flight time and mission efficiency.
+                        </p>
+                        <div class="tech-details hidden group-hover:block transition-all duration-300">
+                            <div class="border-t border-surface/20 pt-4 mt-4">
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-accent">Flight Time:</span>
+                                        <span class="text-text-secondary block">Up to 45 minutes</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-accent">Charging:</span>
+                                        <span class="text-text-secondary block">Fast Charge 15min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Comparison Section -->
+    <section class="section-padding bg-surface/5">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-4 text-white">Flying Eye vs Traditional Methods</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    See how our advanced drone technology outperforms conventional disaster response approaches
+                </p>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="overflow-x-auto">
+                <div class="hero-glass rounded-xl p-8">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-surface/20">
+                                <th class="text-left py-4 px-6 font-rajdhani font-semibold text-white">Capability</th>
+                                <th class="text-center py-4 px-6 font-rajdhani font-semibold text-accent">Flying Eye</th>
+                                <th class="text-center py-4 px-6 font-rajdhani font-semibold text-text-secondary">Traditional Methods</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr class="border-b border-surface/10">
+                                <td class="py-4 px-6 text-white">Response Time</td>
+                                <td class="py-4 px-6 text-center text-accent font-medium">< 5 minutes</td>
+                                <td class="py-4 px-6 text-center text-text-secondary">2-24 hours</td>
+                            </tr>
+                            <tr class="border-b border-surface/10">
+                                <td class="py-4 px-6 text-white">Weather Independence</td>
+                                <td class="py-4 px-6 text-center text-success">✓ All-weather capable</td>
+                                <td class="py-4 px-6 text-center text-error">✗ Weather dependent</td>
+                            </tr>
+                            <tr class="border-b border-surface/10">
+                                <td class="py-4 px-6 text-white">Infrastructure Requirements</td>
+                                <td class="py-4 px-6 text-center text-success">✓ None required</td>
+                                <td class="py-4 px-6 text-center text-error">✗ Roads/landing zones</td>
+                            </tr>
+                            <tr class="border-b border-surface/10">
+                                <td class="py-4 px-6 text-white">Operational Cost</td>
+                                <td class="py-4 px-6 text-center text-accent font-medium">90% lower</td>
+                                <td class="py-4 px-6 text-center text-text-secondary">High personnel cost</td>
+                            </tr>
+                            <tr class="border-b border-surface/10">
+                                <td class="py-4 px-6 text-white">Risk to Personnel</td>
+                                <td class="py-4 px-6 text-center text-success">✓ Zero risk</td>
+                                <td class="py-4 px-6 text-center text-error">✗ High risk</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 text-white">24/7 Availability</td>
+                                <td class="py-4 px-6 text-center text-success">✓ Autonomous</td>
+                                <td class="py-4 px-6 text-center text-warning">△ Limited hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Integration Section -->
+    <section class="section-padding bg-primary/20">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-4 text-white">Open Source Development</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Explore our codebase, contribute to the project, and join the community building the future of disaster response
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- GitHub Stats -->
+                <div class="space-y-6">
+                    <div class="hero-glass p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-rajdhani font-semibold text-xl text-white">Repository Statistics</h3>
+                            <div class="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-rajdhani font-bold text-accent mb-1">156</div>
+                                <div class="text-sm text-text-secondary">Commits</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-rajdhani font-bold text-success mb-1">23</div>
+                                <div class="text-sm text-text-secondary">Contributors</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-rajdhani font-bold text-secondary-300 mb-1">8</div>
+                                <div class="text-sm text-text-secondary">Releases</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-rajdhani font-bold text-warning mb-1">342</div>
+                                <div class="text-sm text-text-secondary">Stars</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code Example -->
+                    <div class="hero-glass p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-rajdhani font-semibold text-lg text-white">API Example</h3>
+                            <span class="text-xs text-accent bg-accent/10 px-2 py-1 rounded">Python</span>
+                        </div>
+                        <div class="bg-primary/50 rounded-lg p-4 font-mono text-sm overflow-x-auto">
+                            <pre class="text-text-secondary"><code><span class="text-accent">from</span> <span class="text-white">flying_eye</span> <span class="text-accent">import</span> <span class="text-white">DroneController</span>
+
+<span class="text-success"># Initialize emergency response drone</span>
+<span class="text-white">drone</span> <span class="text-accent">=</span> <span class="text-white">DroneController</span><span class="text-text-secondary">(</span>
+    <span class="text-warning">emergency_mode</span><span class="text-accent">=</span><span class="text-secondary-300">True</span><span class="text-text-secondary">,</span>
+    <span class="text-warning">payload_type</span><span class="text-accent">=</span><span class="text-accent">"medical_supplies"</span>
+<span class="text-text-secondary">)</span>
+
+<span class="text-success"># Deploy to emergency coordinates</span>
+<span class="text-white">response</span> <span class="text-accent">=</span> <span class="text-white">drone</span><span class="text-text-secondary">.</span><span class="text-white">deploy</span><span class="text-text-secondary">(</span>
+    <span class="text-warning">lat</span><span class="text-accent">=</span><span class="text-secondary-300">28.6139</span><span class="text-text-secondary">,</span> <span class="text-warning">lng</span><span class="text-accent">=</span><span class="text-secondary-300">77.2090</span>
+<span class="text-text-secondary">)</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub Actions -->
+                <div class="space-y-6">
+                    <div class="text-center lg:text-left">
+                        <h3 class="font-rajdhani font-semibold text-2xl text-white mb-4">Join the Development</h3>
+                        <p class="text-text-secondary mb-8">
+                            Flying Eye is built with transparency and collaboration at its core. Explore our codebase, report issues, or contribute new features.
+                        </p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="space-y-4">
+                        <a href="https://github.com/JeetMondal777/SIH2025_APP" class="btn-primary w-full text-center block" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub (opens in new tab)">
+                            <span class="flex items-center justify-center space-x-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>View on GitHub</span>
+                            </span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn-outline w-full text-center block">
+                            <span class="flex items-center justify-center space-x-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                <span>Documentation</span>
+                            </span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn-secondary w-full text-center block">
+                            <span class="flex items-center justify-center space-x-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                                <span>Join Community</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="hero-glass p-6">
+                        <h4 class="font-rajdhani font-semibold text-lg text-white mb-4">Recent Activity</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3 text-sm">
+                                <div class="w-2 h-2 bg-success rounded-full"></div>
+                                <span class="text-text-secondary">Enhanced weather resistance algorithms</span>
+                                <span class="text-xs text-accent">2 hours ago</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-text-secondary">Added real-time telemetry dashboard</span>
+                                <span class="text-xs text-accent">1 day ago</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <div class="w-2 h-2 bg-secondary-300 rounded-full"></div>
+                                <span class="text-text-secondary">Improved battery optimization</span>
+                                <span class="text-xs text-accent">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section-padding bg-gradient-to-r from-primary to-secondary">
+        <div class="container-max text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-6 text-white">
+                    Ready to Explore Our Capabilities?
+                </h2>
+                <p class="text-lg text-text-secondary mb-8">
+                    Discover how Flying Eye's advanced technology can revolutionize disaster response in your region.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="system_capabilities.html" class="btn-primary text-lg px-8 py-4">
+                        <span class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                            <span>View System Capabilities</span>
+                        </span>
+                    </a>
+                    <a href="contact_mission_control.html" class="btn-outline text-lg px-8 py-4">
+                        <span class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>Contact Our Team</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar background on scroll
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-primary/90');
+            } else {
+                navbar.classList.remove('bg-primary/90');
+            }
+        });
+
+        // Tech card hover effects
+        const techCards = document.querySelectorAll('.tech-card');
+        
+        techCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const details = card.querySelector('.tech-details');
+                if (details) {
+                    details.classList.remove('hidden');
+                    details.classList.add('animate-fade-in');
+                }
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                const details = card.querySelector('.tech-details');
+                if (details) {
+                    details.classList.add('hidden');
+                    details.classList.remove('animate-fade-in');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        // GitHub stats animation (simulated)
+        function animateStats() {
+            const stats = document.querySelectorAll('.text-2xl.font-rajdhani.font-bold');
+            stats.forEach(stat => {
+                const finalValue = parseInt(stat.textContent);
+                let currentValue = 0;
+                const increment = finalValue / 50;
+                
+                const timer = setInterval(() => {
+                    currentValue += increment;
+                    if (currentValue >= finalValue) {
+                        stat.textContent = finalValue;
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(currentValue);
+                    }
+                }, 30);
+            });
+        }
+
+        // Trigger stats animation when section is visible
+        const statsSection = document.querySelector('#github-stats');
+        if (statsSection) {
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateStats();
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statsObserver.observe(statsSection);
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>System Capabilities - Flying Eye | Technical Specifications & Performance</title>
+    <meta name="description" content="Comprehensive technical specifications and performance benchmarks for Flying Eye autonomous drone delivery systems. Built for reliability in critical moments." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fflyingeye8404back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-400">
+        <div class="hero-glass backdrop-blur-strong">
+            <div class="container-max px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                                <path d="M12 16L13.09 22.26L22 23L13.09 23.74L12 30L10.91 23.74L2 23L10.91 22.26L12 16Z" opacity="0.6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="font-rajdhani font-bold text-xl text-white">Flying Eye</h1>
+                            <p class="text-xs text-text-secondary">System Capabilities</p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="index.html" class="text-white hover:text-accent transition-colors duration-300">Command Center</a>
+                        <a href="mission_overview.html" class="text-white hover:text-accent transition-colors duration-300">Mission Overview</a>
+                        <a href="technology_showcase.html" class="text-white hover:text-accent transition-colors duration-300">Technology</a>
+                        <a href="system_capabilities.html" class="text-accent font-medium transition-colors duration-300">Capabilities</a>
+                        <a href="team_command.html" class="text-white hover:text-accent transition-colors duration-300">Team</a>
+                        <a href="contact_mission_control.html" class="text-white hover:text-accent transition-colors duration-300">Contact</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-surface/20">
+                    <div class="flex flex-col space-y-4 pt-4">
+                        <a href="index.html" class="text-white hover:text-accent transition-colors duration-300">Command Center</a>
+                        <a href="mission_overview.html" class="text-white hover:text-accent transition-colors duration-300">Mission Overview</a>
+                        <a href="technology_showcase.html" class="text-white hover:text-accent transition-colors duration-300">Technology</a>
+                        <a href="system_capabilities.html" class="text-accent font-medium">Capabilities</a>
+                        <a href="team_command.html" class="text-white hover:text-accent transition-colors duration-300">Team</a>
+                        <a href="contact_mission_control.html" class="text-white hover:text-accent transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/90 via-secondary/80 to-primary/90"></div>
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Advanced technology systems" class="w-full h-full object-cover opacity-30" onerror="this.src='https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 container-max px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center space-x-2 bg-surface/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-surface/20">
+                    <div class="w-2 h-2 bg-success rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-text-secondary">Technical Specifications</span>
+                    <span class="text-xs text-accent">Version 2.1.0</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="font-rajdhani font-bold text-4xl md:text-6xl lg:text-7xl mb-6 text-shadow-lg">
+                    <span class="text-white">System</span><br />
+                    <span class="text-gradient">Capabilities</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-lg md:text-xl text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
+                    Built for reliability in critical moments. Our technical foundation combines cutting-edge automation with battle-tested infrastructure to deliver when it matters most.
+                </p>
+
+                <!-- Key Performance Indicators -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+                    <div class="hero-glass p-6 text-center">
+                        <div class="text-3xl font-rajdhani font-bold text-accent mb-2">99.9%</div>
+                        <div class="text-sm text-text-secondary">System Uptime</div>
+                    </div>
+                    <div class="hero-glass p-6 text-center">
+                        <div class="text-3xl font-rajdhani font-bold text-success mb-2">< 2s</div>
+                        <div class="text-sm text-text-secondary">Response Time</div>
+                    </div>
+                    <div class="hero-glass p-6 text-center">
+                        <div class="text-3xl font-rajdhani font-bold text-accent mb-2">50GB</div>
+                        <div class="text-sm text-text-secondary">Data Processing</div>
+                    </div>
+                    <div class="hero-glass p-6 text-center">
+                        <div class="text-3xl font-rajdhani font-bold text-success mb-2">24/7</div>
+                        <div class="text-sm text-text-secondary">Monitoring</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Architecture Section -->
+    <section id="architecture" class="section-padding bg-primary/30">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-4 text-white">System Architecture</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Modular, scalable architecture designed for mission-critical operations with real-time data processing and autonomous decision-making capabilities.
+                </p>
+            </div>
+
+            <!-- Interactive Architecture Diagram -->
+            <div class="relative bg-surface/5 rounded-2xl p-8 mb-12 border border-surface/20">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Frontend Layer -->
+                    <div class="space-y-6">
+                        <div class="text-center mb-6">
+                            <h3 class="font-rajdhani font-semibold text-xl text-accent mb-2">Frontend Layer</h3>
+                            <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
+                        </div>
+                        
+                        <div class="card hover:bg-surface/15 cursor-pointer transition-all duration-300" onclick="toggleDetails('frontend-html')">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-rajdhani font-semibold text-white">Semantic HTML5</h4>
+                                    <p class="text-sm text-text-secondary">Accessibility & SEO optimized</p>
+                                </div>
+                            </div>
+                            <div id="frontend-html" class="hidden mt-4 pt-4 border-t border-surface/20">
+                                <p class="text-sm text-text-secondary mb-2">Features:</p>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• WCAG 2.2+ compliance</li>
+                                    <li>• Screen reader optimization</li>
+                                    <li>• Semantic sectioning elements</li>
+                                    <li>• Progressive enhancement</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card hover:bg-surface/15 cursor-pointer transition-all duration-300" onclick="toggleDetails('frontend-css')">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-secondary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-rajdhani font-semibold text-white">CSS Grid/Flexbox</h4>
+                                    <p class="text-sm text-text-secondary">Responsive design system</p>
+                                </div>
+                            </div>
+                            <div id="frontend-css" class="hidden mt-4 pt-4 border-t border-surface/20">
+                                <p class="text-sm text-text-secondary mb-2">Capabilities:</p>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• Mobile-first approach</li>
+                                    <li>• Complex layout support</li>
+                                    <li>• Performance optimized</li>
+                                    <li>• Cross-browser compatibility</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card hover:bg-surface/15 cursor-pointer transition-all duration-300" onclick="toggleDetails('frontend-js')">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-warning/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-rajdhani font-semibold text-white">Enhanced JavaScript</h4>
+                                    <p class="text-sm text-text-secondary">Smooth interactions</p>
+                                </div>
+                            </div>
+                            <div id="frontend-js" class="hidden mt-4 pt-4 border-t border-surface/20">
+                                <p class="text-sm text-text-secondary mb-2">Features:</p>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• Intersection Observer API</li>
+                                    <li>• Smooth scroll navigation</li>
+                                    <li>• Performance monitoring</li>
+                                    <li>• Progressive Web App features</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Layer -->
+                    <div class="space-y-6">
+                        <div class="text-center mb-6">
+                            <h3 class="font-rajdhani font-semibold text-xl text-success mb-2">Backend Layer</h3>
+                            <div class="w-16 h-1 bg-success mx-auto rounded-full"></div>
+                        </div>
+                        
+                        <div class="card hover:bg-surface/15 cursor-pointer transition-all duration-300" onclick="toggleDetails('backend-api')">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-success/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h6a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h6a2 2 0 002-2v-4a2 2 0 00-2-2m8-8a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-rajdhani font-semibold text-white">RESTful API</h4>
+                                    <p class="text-sm text-text-secondary">Scalable data processing</p>
+                                </div>
+                            </div>
+                            <div id="backend-api" class="hidden mt-4 pt-4 border-t border-surface/20">
+                                <p class="text-sm text-text-secondary mb-2">Specifications:</p>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• Real-time data synchronization</li>
+                                    <li>• Load balancing & caching</li>
+                                    <li>• Rate limiting & security</li>
+                                    <li>• Comprehensive logging</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card hover:bg-surface/15 cursor-pointer transition-all duration-300" onclick="toggleDetails('backend-db')">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-rajdhani font-semibold text-white">Database Layer</h4>
+                                    <p class="text-sm text-text-secondary">Mission-critical storage</p>
+                                </div>
+                            </div>
+                            <div id="backend-db" class="hidden mt-4 pt-4 border-t border-surface/20">
+                                <p class="text-sm text-text-secondary mb-2">Features:</p>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• High availability clustering</li>
+                                    <li>• Automated backups</li>
+                                    <li>• Encryption at rest</li>
+                                    <li>• Performance optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card hover:bg-surface/15 cursor-pointer transition-all duration-300" onclick="toggleDetails('backend-auth')">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-error/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-rajdhani font-semibold text-white">Security Layer</h4>
+                                    <p class="text-sm text-text-secondary">Enterprise-grade protection</p>
+                                </div>
+                            </div>
+                            <div id="backend-auth" class="hidden mt-4 pt-4 border-t border-surface/20">
+                                <p class="text-sm text-text-secondary mb-2">Security:</p>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• Multi-factor authentication</li>
+                                    <li>• Role-based access control</li>
+                                    <li>• End-to-end encryption</li>
+                                    <li>• Audit trail logging</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Infrastructure Layer -->
+                    <div class="space-y-6">
+                        <div class="text-center mb-6">
+                            <h3 class="font-rajdhani font-semibold text-xl text-secondary-300 mb-2">Infrastructure</h3>
+                            <div class="w-16 h-1 bg-secondary-300 mx-auto rounded-full"></div>
+                        </div>
+                        
+                        <div class="card hover:bg-surface/15 cursor-pointer transition-all duration-300" onclick="toggleDetails('infra-cloud')">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-secondary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-rajdhani font-semibold text-white">Cloud Infrastructure</h4>
+                                    <p class="text-sm text-text-secondary">Auto-scaling deployment</p>
+                                </div>
+                            </div>
+                            <div id="infra-cloud" class="hidden mt-4 pt-4 border-t border-surface/20">
+                                <p class="text-sm text-text-secondary mb-2">Capabilities:</p>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• Multi-region deployment</li>
+                                    <li>• Auto-scaling groups</li>
+                                    <li>• Load balancing</li>
+                                    <li>• Disaster recovery</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card hover:bg-surface/15 cursor-pointer transition-all duration-300" onclick="toggleDetails('infra-monitor')">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-rajdhani font-semibold text-white">Monitoring & Analytics</h4>
+                                    <p class="text-sm text-text-secondary">Real-time insights</p>
+                                </div>
+                            </div>
+                            <div id="infra-monitor" class="hidden mt-4 pt-4 border-t border-surface/20">
+                                <p class="text-sm text-text-secondary mb-2">Monitoring:</p>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• Performance metrics</li>
+                                    <li>• Error tracking</li>
+                                    <li>• User behavior analytics</li>
+                                    <li>• Custom dashboards</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card hover:bg-surface/15 cursor-pointer transition-all duration-300" onclick="toggleDetails('infra-ci')">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-warning/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-rajdhani font-semibold text-white">CI/CD Pipeline</h4>
+                                    <p class="text-sm text-text-secondary">Automated deployment</p>
+                                </div>
+                            </div>
+                            <div id="infra-ci" class="hidden mt-4 pt-4 border-t border-surface/20">
+                                <p class="text-sm text-text-secondary mb-2">Pipeline:</p>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• Automated testing</li>
+                                    <li>• Code quality checks</li>
+                                    <li>• Zero-downtime deployment</li>
+                                    <li>• Rollback capabilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Benchmarks Section -->
+    <section id="performance" class="section-padding bg-secondary/20">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-4 text-white">Performance Benchmarks</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Rigorous testing ensures optimal performance under extreme conditions. Our systems are built to handle peak loads while maintaining sub-second response times.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Load Testing Results -->
+                <div class="card">
+                    <h3 class="font-rajdhani font-semibold text-xl text-white mb-6">Load Testing Results</h3>
+                    
+                    <!-- Performance Chart Placeholder -->
+                    <div class="bg-surface/5 rounded-lg p-6 mb-6 border border-surface/10">
+                        <div class="flex items-end justify-between h-32 space-x-2">
+                            <div class="flex flex-col items-center space-y-2">
+                                <div class="w-8 bg-accent rounded-t" style="height: 60%"></div>
+                                <span class="text-xs text-text-secondary">100</span>
+                            </div>
+                            <div class="flex flex-col items-center space-y-2">
+                                <div class="w-8 bg-accent rounded-t" style="height: 80%"></div>
+                                <span class="text-xs text-text-secondary">500</span>
+                            </div>
+                            <div class="flex flex-col items-center space-y-2">
+                                <div class="w-8 bg-success rounded-t" style="height: 85%"></div>
+                                <span class="text-xs text-text-secondary">1K</span>
+                            </div>
+                            <div class="flex flex-col items-center space-y-2">
+                                <div class="w-8 bg-success rounded-t" style="height: 90%"></div>
+                                <span class="text-xs text-text-secondary">5K</span>
+                            </div>
+                            <div class="flex flex-col items-center space-y-2">
+                                <div class="w-8 bg-warning rounded-t" style="height: 75%"></div>
+                                <span class="text-xs text-text-secondary">10K</span>
+                            </div>
+                            <div class="flex flex-col items-center space-y-2">
+                                <div class="w-8 bg-error rounded-t" style="height: 40%"></div>
+                                <span class="text-xs text-text-secondary">20K</span>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="text-sm text-text-secondary">Concurrent Users vs Response Time</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-rajdhani font-bold text-success mb-1">1.2s</div>
+                            <div class="text-sm text-text-secondary">Avg Response Time</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-rajdhani font-bold text-accent mb-1">15K</div>
+                            <div class="text-sm text-text-secondary">Max Concurrent Users</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Web Vitals -->
+                <div class="card">
+                    <h3 class="font-rajdhani font-semibold text-xl text-white mb-6">Core Web Vitals</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Largest Contentful Paint -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm text-text-secondary">Largest Contentful Paint</span>
+                                <span class="text-sm font-medium text-success">1.2s</span>
+                            </div>
+                            <div class="w-full bg-surface/10 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Excellent (< 2.5s)</div>
+                        </div>
+
+                        <!-- First Input Delay -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm text-text-secondary">First Input Delay</span>
+                                <span class="text-sm font-medium text-success">45ms</span>
+                            </div>
+                            <div class="w-full bg-surface/10 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Excellent (< 100ms)</div>
+                        </div>
+
+                        <!-- Cumulative Layout Shift -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm text-text-secondary">Cumulative Layout Shift</span>
+                                <span class="text-sm font-medium text-success">0.05</span>
+                            </div>
+                            <div class="w-full bg-surface/10 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Excellent (< 0.1)</div>
+                        </div>
+
+                        <!-- Performance Score -->
+                        <div class="pt-4 border-t border-surface/20">
+                            <div class="text-center">
+                                <div class="text-3xl font-rajdhani font-bold text-success mb-2">96</div>
+                                <div class="text-sm text-text-secondary">Overall Performance Score</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Documentation Section -->
+    <section id="documentation" class="section-padding bg-primary/40">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-4 text-white">Technical Documentation</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Comprehensive guides and code examples for seamless integration and deployment. Built with developers in mind.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- API Documentation -->
+                <div class="card">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-rajdhani font-semibold text-xl text-white">API Documentation</h3>
+                            <p class="text-sm text-text-secondary">RESTful endpoints and integration guides</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="expandable-section">
+                            <button class="w-full text-left p-4 bg-surface/5 rounded-lg border border-surface/10 hover:bg-surface/10 transition-all duration-300" onclick="toggleSection('api-auth')">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium text-white">Authentication</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="api-auth" class="hidden mt-4 p-4 bg-surface/5 rounded-lg border border-surface/10">
+                                <div class="font-mono text-sm bg-primary/50 p-4 rounded border border-surface/20 mb-4">
+                                    <div class="text-accent">POST</div>
+                                    <div class="text-white">/api/v1/auth/login</div>
+                                    <div class="text-text-secondary mt-2">
+                                        {<br />
+                                        &nbsp;&nbsp;"email": "user@example.com",<br />
+                                        &nbsp;&nbsp;"password": "secure_password"<br />
+                                        }
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary">Secure JWT-based authentication with refresh token support.</p>
+                            </div>
+                        </div>
+
+                        <div class="expandable-section">
+                            <button class="w-full text-left p-4 bg-surface/5 rounded-lg border border-surface/10 hover:bg-surface/10 transition-all duration-300" onclick="toggleSection('api-missions')">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium text-white">Mission Management</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="api-missions" class="hidden mt-4 p-4 bg-surface/5 rounded-lg border border-surface/10">
+                                <div class="font-mono text-sm bg-primary/50 p-4 rounded border border-surface/20 mb-4">
+                                    <div class="text-success">GET</div>
+                                    <div class="text-white">/api/v1/missions</div>
+                                    <div class="text-text-secondary mt-2">
+                                        ?status=active&limit=10&offset=0
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary">Retrieve and manage active missions with real-time status updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integration Guides -->
+                <div class="card">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-secondary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-rajdhani font-semibold text-xl text-white">Integration Guides</h3>
+                            <p class="text-sm text-text-secondary">Step-by-step implementation examples</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="expandable-section">
+                            <button class="w-full text-left p-4 bg-surface/5 rounded-lg border border-surface/10 hover:bg-surface/10 transition-all duration-300" onclick="toggleSection('guide-setup')">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium text-white">Quick Start Setup</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="guide-setup" class="hidden mt-4 p-4 bg-surface/5 rounded-lg border border-surface/10">
+                                <div class="font-mono text-sm bg-primary/50 p-4 rounded border border-surface/20 mb-4">
+                                    <div class="text-accent"># Install dependencies</div>
+                                    <div class="text-white">npm install flying-eye-sdk</div>
+                                    <div class="text-accent mt-2"># Initialize client</div>
+                                    <div class="text-white">const client = new FlyingEye({</div>
+                                    <div class="text-text-secondary">&nbsp;&nbsp;apiKey: 'your-api-key'</div>
+                                    <div class="text-white">})</div>
+                                </div>
+                                <p class="text-sm text-text-secondary">Get started in minutes with our comprehensive SDK.</p>
+                            </div>
+                        </div>
+
+                        <div class="expandable-section">
+                            <button class="w-full text-left p-4 bg-surface/5 rounded-lg border border-surface/10 hover:bg-surface/10 transition-all duration-300" onclick="toggleSection('guide-deploy')">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium text-white">Deployment Guide</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="guide-deploy" class="hidden mt-4 p-4 bg-surface/5 rounded-lg border border-surface/10">
+                                <div class="font-mono text-sm bg-primary/50 p-4 rounded border border-surface/20 mb-4">
+                                    <div class="text-accent"># Build for production</div>
+                                    <div class="text-white">npm run build</div>
+                                    <div class="text-accent mt-2"># Deploy to cloud</div>
+                                    <div class="text-white">flying-eye deploy --env production</div>
+                                </div>
+                                <p class="text-sm text-text-secondary">Production-ready deployment with zero-downtime updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Integration -->
+            <div class="mt-12 text-center">
+                <div class="card max-w-2xl mx-auto">
+                    <div class="flex items-center justify-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-surface/10 rounded-lg flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div class="text-left">
+                            <h3 class="font-rajdhani font-semibold text-xl text-white">Open Source Repository</h3>
+                            <p class="text-text-secondary">Explore the complete codebase and contribute to the project</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-rajdhani font-bold text-accent mb-1">2.3K</div>
+                            <div class="text-sm text-text-secondary">Stars</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-rajdhani font-bold text-success mb-1">847</div>
+                            <div class="text-sm text-text-secondary">Forks</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-rajdhani font-bold text-secondary-300 mb-1">156</div>
+                            <div class="text-sm text-text-secondary">Contributors</div>
+                        </div>
+                    </div>
+
+                    <a href="https://github.com/JeetMondal777/SIH2025_APP" class="btn-primary inline-flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>View Repository</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section-padding bg-primary/50">
+        <div class="container-max text-center">
+            <h2 class="font-rajdhani font-bold text-3xl md:text-4xl mb-4 text-white">Ready to Deploy?</h2>
+            <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                Join the mission to revolutionize disaster response. Get started with our comprehensive documentation and support.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="contact_mission_control.html" class="btn-primary text-lg px-8 py-4">
+                    <span class="flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                        <span>Contact Our Team</span>
+                    </span>
+                </a>
+                <a href="technology_showcase.html" class="btn-outline text-lg px-8 py-4">
+                    <span class="flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                        <span>Explore Technology</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar background on scroll
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-primary/90');
+            } else {
+                navbar.classList.remove('bg-primary/90');
+            }
+        });
+
+        // Toggle expandable details
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+
+        // Toggle expandable sections
+        function toggleSection(id) {
+            const element = document.getElementById(id);
+            const button = element.previousElementSibling.querySelector('svg');
+            
+            element.classList.toggle('hidden');
+            button.classList.toggle('rotate-180');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
