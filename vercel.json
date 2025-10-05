@@ -1,6 +1,7 @@
 {
   "version": 2,
   "public": true,
+  "outputDirectory": "public",
   "rewrites": [
     { "source": "/", "destination": "/pages/index.html" },
     { "source": "/:slug", "destination": "/pages/:slug.html" },
