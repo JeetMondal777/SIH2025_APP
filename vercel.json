@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "public": true,
+  "rewrites": [
+    { "source": "/", "destination": "/pages/index.html" },
+    { "source": "/:slug", "destination": "/pages/:slug.html" },
+    { "source": "/:folder/:slug", "destination": "/pages/:folder/:slug.html" }
+  ]
+}
